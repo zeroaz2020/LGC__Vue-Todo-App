@@ -1,0 +1,23 @@
+{
+  "name": "Vue-Todo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --colors",
+    "start": "webpack-dev-server --progress --colors"
+  },
+  "keywords": [
+    "vue",
+    "todo"
+  ],
+  "author": "LeeGyeCheol",
+  "license": "ISC",
+  "devDependencies": {
+    "vue-loader": "^15.9.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
