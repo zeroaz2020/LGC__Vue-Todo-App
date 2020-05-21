@@ -2,6 +2,7 @@ const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 require('@babel/polyfill')
 
 module.exports = {
@@ -53,5 +54,7 @@ module.exports = {
                 },
             ],
         }),
+        // 빌드(build) 직전 `output.path`(`dist` directory) 내 기존 모든 파일 삭제
+        new CleanWebpackPlugin()
     ]
 }
