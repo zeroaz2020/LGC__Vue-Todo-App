@@ -4,7 +4,7 @@
 
 <script>
     export default {
-        data () {
+        data() {
             return {
                 msg: 'Hello Vue!'
             }
@@ -12,8 +12,9 @@
     }
 </script>
 
-<style scoped>
-h1 {
-    color: red;
-}
+<style lang="scss" scoped>
+    $color: green;
+    h1 {
+        color: $color;
+    }
 </style>

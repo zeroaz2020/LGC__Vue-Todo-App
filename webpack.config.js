@@ -8,7 +8,6 @@ require('@babel/polyfill')
 
 module.exports = (env, opts) => {
     const config = {
-        // 중복되는 옵션들...
         // 진입점
         entry: {
             app: [
@@ -38,6 +37,14 @@ module.exports = (env, opts) => {
                     use: [
                         "vue-style-loader",
                         "css-loader"
+                    ]
+                },
+                {
+                    test: /\.scss$/,
+                    use: [
+                        'vue-style-loader',
+                        'css-loader',
+                        'sass-loader'
                     ]
                 }
             ]
@@ -70,11 +77,11 @@ module.exports = (env, opts) => {
                 // HMR, https://webpack.js.org/concepts/hot-module-replacement/
                 hot: true
             }
-        })
-    // opts.mode === 'production'
+            })
+        // opts.mode === 'production'
     } else {
         return merge(config, {
-            // 추가 제품용 옵션
+            // 추가 배포용 옵션
             devtool: 'cheap-module-source-map',
             plugins: [
                 // 빌드(build) 직전 `output.path`(`dist` directory) 내 기존 모든 파일 삭제
