@@ -8,6 +8,9 @@ require('@babel/polyfill')
 
 module.exports = (env, opts) => {
     const config = {
+        resolve: {
+            extensions: ['.vue', '.js']
+        },
         // 진입점
         entry: {
             app: [
