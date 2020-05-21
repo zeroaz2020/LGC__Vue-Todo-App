@@ -1,11 +1,14 @@
 {
-  "name": "Vue-Todo-app",
+  "name": "Vue-Todo-App",
   "version": "1.0.0",
-  "description": "",
+  "description": "Vue Todo list app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeroaz2020/LKC__Vue-Todo-App"
+  },
   "main": "index.js",
   "scripts": {
-    "build": "webpack --progress --colors",
-    "start": "webpack-dev-server --progress --colors"
+    "build": "webpack --mode production"
   },
   "keywords": [
     "vue",
@@ -17,6 +20,7 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.0.1",
     "css-loader": "^3.5.3",
     "html-webpack-plugin": "^4.3.0",
     "vue-loader": "^15.9.2",
