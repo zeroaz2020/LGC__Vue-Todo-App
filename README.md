@@ -1,2 +1,2 @@
-# LKC__Vue-Todo-App
-Vue-Todo-App
+# LeeGyeCheol__Vue-Todo-App
+godmarketing1004@gmail.com
